@@ -3,12 +3,11 @@
 
 @font-face {
   font-family: "iransans";
-  src: url("./../font/IRANSansWeb(FaNum).ttf");
+  src: url("./../font/IranSans.ttf");
 }
 
 body {
   margin: 0;
-  font-family: "iransans";
   direction: rtl;
   background-color: #121212;
   color: #e8feff;
@@ -18,4 +17,14 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: iransanse !important;
+  font-size: 14px;
+}
+
+.icon {
+  font-size: 16px;
 }
