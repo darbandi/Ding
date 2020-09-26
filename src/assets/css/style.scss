@@ -1,0 +1,21 @@
+@import "./var";
+@import "./fontello.css";
+
+@font-face {
+  font-family: "iransans";
+  src: url("./../font/IRANSansWeb(FaNum).ttf");
+}
+
+body {
+  margin: 0;
+  font-family: "iransans";
+  direction: rtl;
+  background-color: #121212;
+  color: #e8feff;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

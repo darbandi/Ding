@@ -1,0 +1,10 @@
+$themes: (
+  light: (
+    bg-color: rgb(255, 255, 255),
+  ),
+  dark: (
+    bg-color: rgb(28, 28, 34),
+  ),
+);
+
+@import "./theme";
