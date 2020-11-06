@@ -1,14 +1,59 @@
-import "./Header.scss";
-import React, { Profiler } from "react";
-import { profilerCallback } from "./../../Utils";
+import React from "react";
+import styled from "styled-components";
+import { Icon } from "./../../components/ui-components";
+
+export const Wrapper = styled.div`
+  background-image: ${(props) => props.theme.login.btn.bgColor};
+  width: 100%;
+  height: 200px;
+`;
+export const Navbar = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+`;
+
+export const DateTime = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+`;
+
+export const DateSection = styled.div`
+  font-size: 20px;
+`;
+
+export const DayName = styled.div`
+  font-size: 20px;
+`;
+
+export const Date = styled.div`
+  font-size: 20px;
+`;
+
+export const TimeSection = styled.div`
+  font-size: 60px;
+`;
 
 const Header = (props) => {
   return (
-    <Profiler id="Surah" onRender={profilerCallback}>
-      <div className="header">
-        
-      </div>
-    </Profiler>
+    <Wrapper>
+      <Navbar>
+        <Icon className="icon icon-menu" />
+        <Icon className="icon icon-time" />
+      </Navbar>
+      <DateTime>
+        <DateSection>
+          <DayName>سه‌شنبه</DayName>
+          <Date>1399/12/12</Date>
+        </DateSection>
+        <TimeSection>12:56</TimeSection>
+      </DateTime>
+    </Wrapper>
   );
 };
 

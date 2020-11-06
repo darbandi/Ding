@@ -1,0 +1,8 @@
+{
+  "login": {
+    "btn": {
+      "color": "#333",
+      "bgColor": "linear-gradient(45deg, #14858a, #0a3f41)"
+    }
+  }
+}
