@@ -5,7 +5,6 @@ import { Icon } from "./../../components/ui-components";
 export const Wrapper = styled.div`
   background-image: ${(props) => props.theme.login.btn.bgColor};
   width: 100%;
-  height: 200px;
 `;
 export const Navbar = styled.div`
   width: 100%;
@@ -20,7 +19,6 @@ export const DateTime = styled.div`
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  padding: 20px;
 `;
 
 export const DateSection = styled.div`

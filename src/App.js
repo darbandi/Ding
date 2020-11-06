@@ -7,27 +7,6 @@ import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 import dark from "./ThemeDark.json";
 import light from "./ThemeLight.json";
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  @font-face {
-    font-family: "iransans";
-    src: url("./../font/IranSans.ttf");
-  }
-
-  * {
-    box-sizing: border-box;
-    font-family: iransanse !important;
-    font-size: 14px;
-  }
-
-  .icon {
-    font-size: 16px;
-  }
-`;
 
 const Wrapper = styled.div`
   margin: 0;
@@ -49,7 +28,6 @@ const App = () => {
   document.title = config.siteName;
   return (
     <ThemeProvider theme={theme}>
-      <GlobalStyle whiteColor />
       <Provider>
         <BrowserRouter>
           <Wrapper>

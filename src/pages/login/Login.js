@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { logo } from "./../../assets/img";
 import styled from "styled-components";
 import { Logo, Image, Wrapper } from "./../../components/ui-components";
-
+import { withRouter } from "react-router-dom";
 
 const Form = styled.form``;
 const Row = styled.div`
@@ -41,6 +41,7 @@ const Input = styled.input`
 const BtnLogin = styled.button`
   margin-top: 50px;
   width: 100%;
+  height: 45px;
   padding: 8px 15px;
   background-image: ${(props) => props.theme.login.btn.bgColor};
   border: none;
@@ -53,10 +54,11 @@ const BtnLogin = styled.button`
   :active,
   ::selection {
     outline: none;
+    user-select: none;
   }
 `;
 
-const Login = () => {
+const Login = ({ history }) => {
   const userRef = useRef(null);
   const passRef = useRef(null);
   return (
@@ -88,7 +90,11 @@ const Login = () => {
           />
         </Row>
         <Row>
-          <BtnLogin type="button" className="btn-login">
+          <BtnLogin
+            type="button"
+            className="btn-login"
+            onClick={() => history.push("/home")}
+          >
             ورود
           </BtnLogin>
         </Row>
@@ -97,4 +103,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default withRouter(Login);
