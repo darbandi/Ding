@@ -1,3 +1,8 @@
+## Rules
+1. using import images
+2. using style components
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
